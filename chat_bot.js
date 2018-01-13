@@ -1,8 +1,12 @@
 const TelegramBot = require('node-telegram-bot-api');
 
-const TOKEN = "335662340:AAECBj8izyXCIkdJFGgRRixbNelTvr2w0lA";
+// Put your bot token here, go to BOT Father in telegram and generate one
+const TOKEN = "your-bot-token";
+
 const PORT = process.env.PORT || 5000;
-const URL = "https://blooming-brook-75813.herokuapp.com"
+
+// get your project url from heroku, for example: https://blooming-brook-75813.herokuapp.com
+const URL = "http://your-project-url"
 
 // Bot
 const botOptions = {
@@ -17,6 +21,8 @@ bot.setWebHook(`${URL}/bot${TOKEN}`);
 bot.on('polling_error', (error) => console.log(error.code));
 bot.on('webhook_error', (error) => console.log(error.code));
 
+
+// Echo command
 bot.onText(/\/echo (.+)/, (msg, match) => {
   const chatId = msg.chat.id;
   const resp = match[1]; 
