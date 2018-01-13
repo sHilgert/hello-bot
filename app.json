@@ -1,0 +1,6 @@
+{
+  "name": "Hello bot",
+  "description": "A chat bot for Hello",
+  "repository": "https://github.com/sHilgert/hello-bot",
+  "keywords": ["node", "bot", "telegram"]
+}

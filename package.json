@@ -1,0 +1,27 @@
+{
+  "name": "hello_bot",
+  "version": "1.0.0",
+  "description": "A Hello chat_bot",
+  "main": "chat_bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sHilgert/hello-bot.git"
+  },
+  "keywords": [
+    "node",
+    "bot",
+    "telegram"
+  ],
+  "author": "Sergio Hilgert Junior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sHilgert/quero_estudobotissues"
+  },
+  "homepage": "https://github.com/sHilgert/hello-bot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.27.1"
+  }
+}
