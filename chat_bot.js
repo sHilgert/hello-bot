@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 
 const TOKEN = "335662340:AAECBj8izyXCIkdJFGgRRixbNelTvr2w0lA";
 const PORT = process.env.PORT || 5000;
-const URL = "http://url-do-heroku-do-seu-projeto"
+const URL = "https://blooming-brook-75813.herokuapp.com"
 
 // Bot
 const botOptions = {
@@ -11,7 +11,7 @@ const botOptions = {
   }
 };
 const bot = new TelegramBot(TOKEN, botOptions);
-//bot.setWebHook(`${URL}/bot${TOKEN}`);
+bot.setWebHook(`${URL}/bot${TOKEN}`);
 
 //Error Handlers
 bot.on('polling_error', (error) => console.log(error.code));
